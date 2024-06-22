@@ -1,0 +1,28 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "homework challenge to genreate professional READme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjenkz/readme-generator.git"
+  },
+  "keywords": [
+    "readme",
+    "file",
+    "generator",
+    "professional"
+  ],
+  "author": "jjenkz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jjenkz/readme-generator/issues"
+  },
+  "homepage": "https://github.com/jjenkz/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
