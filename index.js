@@ -17,7 +17,7 @@ const questions = () => {
         message: "Give a brief description of the product",
       },
       {
-        type: "list",
+        type: "checkbox",
         name: "tableOfContents",
         choices: [
           "Installation",
@@ -36,7 +36,7 @@ const questions = () => {
       {
         type: "input",
         name: "usage",
-        message: "What is the main files being used?",
+        message: "What are the main files being used?",
       },
       {
         type: "input",
