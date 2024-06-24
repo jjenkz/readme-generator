@@ -61,14 +61,19 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(questions) {
+function writeToFile() {
   fs.writeFile("README.md", questions, (err) => {
-    err
-      ? console.error("Error writing READme file!")
-      : console.log("READme file successfully created!");
+    if (err) {
+      console.error("Error writing READme file!", err);
+    } else {
+      questions.forEach((question, index) => {
+        fs.appendFileSync("README.md", `${index + 1}. ${question}/n`);
+      });
+      console.log("READme file successfully created!");
+    }
   });
 }
-writeToFile(questions);
+writeToFile();
 
 // TODO: Create a function to initialize app
 function init() {
