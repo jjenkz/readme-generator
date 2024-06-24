@@ -18,7 +18,7 @@ const questions = [
   {
     type: "checkbox",
     name: "tableOfContents",
-    message: "Choose for the README file:",
+    message: "Choose all that apply:",
     choices: [
       "Installation",
       "Usage",
