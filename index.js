@@ -51,7 +51,7 @@ const questions = [
   {
     type: "input",
     name: "tests",
-    message: "(Optional) Provide any bugs that were encountered:",
+    message: "What command should we use for a default key",
   },
   {
     type: "input",
@@ -63,21 +63,16 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile() {
   fs.writeFile("README.md", questions, (err) => {
-    if (err) {
-      console.error("Error writing READme file!", err);
-    } else {
-      questions.forEach((question, index) => {
-        fs.appendFileSync("README.md", `${index + 1}. ${question}/n`);
-      });
-      console.log("READme file successfully created!");
-    }
+    err
+      ? console.error("Error writing READme file!", err)
+      : console.log("READme file successfully created!");
   });
 }
-writeToFile();
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt
+  inquirer
+    .prompt(questions)
     .then((response) => {
       console.log(response);
       return response;
