@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const markdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -13,7 +13,7 @@ const questions = [
   {
     type: "input",
     name: "description",
-    message: "Give a brief description of the product",
+    message: "Give a brief description of the product:",
   },
   {
     type: "checkbox",
@@ -51,7 +51,7 @@ const questions = [
   {
     type: "input",
     name: "tests",
-    message: "What command should we use for a default key",
+    message: "What command should we use for a default key:",
   },
   {
     type: "input",
@@ -61,8 +61,8 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile() {
-  fs.writeFile("README.md", markdown, (err) => {
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) => {
     err
       ? console.error("Error writing READme file!", err)
       : console.log("READme file successfully created!");
@@ -75,9 +75,9 @@ function writeToFile() {
 function init() {
   inquirer
     .prompt(questions)
-    .then((response) => {
-      console.log(response);
-      return response;
+    .then((answers) => {
+      const markdown = generateMarkdown(answers);
+      writeToFile("README.md", markdown);
     })
     .catch((error) => {
       console.error("Error during prompt:", error);
