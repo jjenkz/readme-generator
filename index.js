@@ -29,9 +29,9 @@ const questions = [
     ],
   },
   {
-    type: "confirm",
+    type: "input",
     name: "installation",
-    message: "Create your own code?",
+    message: "Create your own code? Y/N?",
   },
   {
     type: "input",
