@@ -13,11 +13,7 @@ function renderLicenseBadge(license) {
       "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
   };
 
-  if (licenseBadges[license]) {
-    return licenseBadges[license];
-  } else {
-    return "";
-  }
+  return licenseBadges[license] || "";
 }
 
 // TODO: Create a function that returns the license link
@@ -31,11 +27,8 @@ function renderLicenseLink(license) {
     "Apache-2.0": "https://opensource.org/licenses/Apache-2.0",
     "GPL-3.0": "https://www.gnu.org/licenses/gpl-3.0",
   };
-  if (licenseLinks[license]) {
-    return licenseLinks[license];
-  } else {
-    return "";
-  }
+
+  return licenseLinks[license] || "";
 }
 
 // TODO: Create a function that returns the license section of README
@@ -44,37 +37,49 @@ function renderLicenseSection(license) {
   if (!license) {
     return "";
   }
-  const licenseSections = {
-    MIT: `
-## License
 
-This project is licensed under the MIT License - see the [MIT License](https://opensource.org/licenses/MIT) for details.
-`,
-    "Apache-2.0": `
-## License
+  return `## License
 
-This project is licensed under the Apache License 2.0 - see the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0) for details.
-`,
-    "GPL-3.0": `
-## License
-
-This project is licensed under the GNU General Public License v3.0 - see the [GNU GPL v3.0](https://www.gnu.org/licenses/gpl-3.0) for details.
-`,
-  };
-  if (licenseSections[license]) {
-    return licenseSections[license];
-  } else {
-    return "";
-  }
+This project is licensed under the [${license}](${renderLicenseLink(
+    license
+  )}) license.
+`;
 }
+
+//   const licenseSections = {
+//     MIT: `
+// ## License
+
+// This project is licensed under the MIT License - see the [MIT License](https://opensource.org/licenses/MIT) for details.
+// `,
+//     "Apache-2.0": `
+// ## License
+
+// This project is licensed under the Apache License 2.0 - see the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0) for details.
+// `,
+//     "GPL-3.0": `
+// ## License
+
+// This project is licensed under the GNU General Public License v3.0 - see the [GNU GPL v3.0](https://www.gnu.org/licenses/gpl-3.0) for details.
+// `,
+//   };
+//   if (licenseSections[license]) {
+//     return licenseSections[license];
+//   } else {
+//     return "";
+//   }
+// }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  # Title
-  ${data.title}
+  # ${data.title}
+
+  ${renderLicenseBadge(data.license)}
+
 
 ## Description
+
 ${data.description}
 
 ## Table of Contents
@@ -86,22 +91,30 @@ ${data.description}
 - [Questions](#questions)
 
 ## Installation
+
 ${data.installation}
 
 ## Usage
+
 ${data.usage}
 
-## License
 ${renderLicenseSection(data.license)}
 
 ## Contributing
+
 ${data.contributing}
 
 ## Tests
+
 ${data.tests}
 
 ## Questions
-Questions? Contact at: [${data.author}](mailto:${data.email}).
+
+If you have any questions about the project, open an issue or contact me directly at ${
+    data.email
+  }. You can find more of my work at [${data.github}](https://github.com/${
+    data.github
+  }).
 `;
 }
 
