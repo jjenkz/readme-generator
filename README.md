@@ -1,10 +1,10 @@
-# Title
+# undefined
 
-READme Generator
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-A README application that dynamically creates a professional READme file.
+It Genreates a README
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ A README application that dynamically creates a professional READme file.
 
 ## Installation
 
-Yes
+There was on starter code to clone
 
 ## Usage
 
@@ -25,16 +25,14 @@ JavaScript
 
 ## License
 
-This project is licensed under the MIT License - see the [MIT License](https://opensource.org/licenses/MIT) for details.
+This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
 
 ## Contributing
 
-Professor Ben, CLassmates: Chris, Mike Lazalde, Billy
+undefined
 
 ## Tests
 
-https://drive.google.com/file/d/13UUDIJxwzuhraTFQt5dPR7pyZjbstEXP/view?usp=sharing
-
 ## Questions
 
-Questions? Contact at: [undefined](mailto:j_jenkins1@u.pacific.edu).
+If you have any questions about the project, open an issue or contact me directly at undefined. You can find more of my work at [undefined](https://github.com/undefined).
