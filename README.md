@@ -21,9 +21,9 @@ Yes, there was starter code provided for this assignment.
 
 ## Usage
 
-node index.js "cast video here"
+node index.js
 
-<iframe src="https://drive.google.com/file/d/13UUDIJxwzuhraTFQt5dPR7pyZjbstEXP/preview" width="500" height="400" allow="autoplay"></iframe>
+https://drive.google.com/file/d/13UUDIJxwzuhraTFQt5dPR7pyZjbstEXP/view?usp=sharing
 
 ## License
 
