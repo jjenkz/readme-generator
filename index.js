@@ -34,7 +34,7 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "What are the main files being used?",
+    message: "Where/How is the product ran? Provide links and videos here:",
   },
   {
     type: "input",
@@ -53,8 +53,13 @@ const questions = [
   },
   {
     type: "input",
-    name: "questions",
+    name: "email",
     message: "Questions? Provide an email or contact:",
+  },
+  {
+    type: "input",
+    name: "github",
+    message: "Provide a Github profile name:",
   },
 ];
 
