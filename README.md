@@ -1,10 +1,10 @@
-# READme Generator
+# README Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-This product was created to help those in building a professional README.md template.
+A product that can provide a professional template of a README.md file
 
 ## Table of Contents
 
@@ -17,13 +17,12 @@ This product was created to help those in building a professional README.md temp
 
 ## Installation
 
-Yes, there was starter code provided for this assignment.
+No, there was starter code provided
 
 ## Usage
 
-node index.js
-
-https://drive.google.com/file/d/13UUDIJxwzuhraTFQt5dPR7pyZjbstEXP/view?usp=sharing
+Node index.js
+https://drive.google.com/file/d/1hMX8ziPKOZECxhgGYECHCkV00fn6Pd9w/view?usp=sharing
 
 ## License
 
@@ -31,11 +30,11 @@ This project is licensed under the [MIT](https://opensource.org/licenses/MIT) li
 
 ## Contributing
 
-Special thanks to Ben Machock, Billy Hogan and Chris Fornia for helping answer questions.
+Ben Machock, Billy Hogan, Chris Fornia
 
 ## Tests
 
-npm run test
+N/A
 
 ## Questions
 
