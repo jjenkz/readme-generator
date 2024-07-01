@@ -1,10 +1,10 @@
-# undefined
+# README Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-It Genreates a README
+A Generators of READmes
 
 ## Table of Contents
 
@@ -17,11 +17,11 @@ It Genreates a README
 
 ## Installation
 
-There was on starter code to clone
+Yes
 
 ## Usage
 
-JavaScript
+JS
 
 ## License
 
@@ -29,9 +29,11 @@ This project is licensed under the [MIT](https://opensource.org/licenses/MIT) li
 
 ## Contributing
 
-undefined
+Everyone
 
 ## Tests
+
+N/A
 
 ## Questions
 
